@@ -77,4 +77,10 @@
         </sql>
     </changeSet>
 
+    <changeSet id="insertData-9" author="Himanshu">
+        <sql>
+            UPDATE employees SET Hobbies = 'Cricket' WHERE id = 4;
+        </sql>
+    </changeSet>
+
 </databaseChangeLog>
