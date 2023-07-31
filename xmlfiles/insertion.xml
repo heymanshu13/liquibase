@@ -21,13 +21,8 @@
         </insert>
     </changeSet>
 
-    <changeSet id="insertData-2" author="Him">
-        <insert tableName="employees">
-            <column name="Email_ID" value="HK13@gmail.com"/>
-        </insert>
-    </changeSet>
 
-    <changeSet id="insertData-3" author="Him">
+    <changeSet id="insertData-2" author="Him">
         <insert tableName="employees">
             <column name="name" value="Himanshu"/>
             <column name="age" valueNumeric="22"/>
@@ -37,68 +32,35 @@
         </insert>
     </changeSet>
 
-
-    <changeSet id="insertData-4" author="Him">
-        <insert tableName="EMPLOYEES DATA">
-            <column name="name" value="Himanshu"/>
-            <column name="age" valueNumeric="22"/>
-            <column name="job_title" value="DevOps Engineer Trainee"/>
-            <column name="location" value="Pune"/>
-        </insert>
-    </changeSet>
-
-    <changeSet id="insertData-5" author="Him">
+    <changeSet id="insertData-3" author="Him">
         <sql>
             UPDATE employees SET City = 'Gwalior' WHERE id = 4;
         </sql>
     </changeSet>
 
-    <changeSet id="insertData-5" author="Himanshu">
+    <changeSet id="insertData-4" author="Himanshu">
         <sql>
             UPDATE employees SET Country = 'India' WHERE id = 4;
         </sql>
     </changeSet>
 
-    <changeSet id="insertData-6" author="Himanshu">
+    <changeSet id="insertData-5" author="Himanshu">
         <sql>
             UPDATE employees SET City = 'Pune' WHERE id = 2;
         </sql>
     </changeSet>
 
-    <changeSet id="insertData-7" author="Himanshu">
+    <changeSet id="insertData-6" author="Himanshu">
         <sql>
             UPDATE employees SET City = 'New York' WHERE id = 1;
         </sql>
     </changeSet>
 
-    <changeSet id="insertData-8" author="Himanshu">
+    <changeSet id="insertData-7" author="Himanshu">
         <sql>
             UPDATE employees SET Email_ID = 'Hk28@gmail.com' WHERE id = 2;
         </sql>
     </changeSet>
 
-    <changeSet id="insertData-9" author="Himanshu">
-        <sql>
-            UPDATE employees SET Hobbies = 'Cricket' WHERE id = 4;
-        </sql>
-    </changeSet>
-  
-    <changeSet id="insertData-10" author="Himanshu">
-        <sql>
-            UPDATE employees SET Hobbies = 'Trekking' WHERE id = 2;
-        </sql>
-    </changeSet>
-
-    <changeSet id="insertData-11" author="Himanshu">
-        <sql>
-            UPDATE employees SET Hometown = 'Gwl' WHERE id = 4;
-        </sql>
-    </changeSet>
-
-    <changeSet id="insertData-12" author="Himanshu">
-        <sql>
-            UPDATE employees SET Hometown = 'Mum' WHERE id = 3;
-        </sql>
-    </changeSet>
 
 </databaseChangeLog>
