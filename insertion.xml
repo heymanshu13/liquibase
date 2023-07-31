@@ -71,4 +71,10 @@
         </sql>
     </changeSet>
 
+    <changeSet id="insertData-8" author="Himanshu">
+        <sql>
+            UPDATE employees SET Email_ID = 'Hk28@gmail.com' WHERE id = 2;
+        </sql>
+    </changeSet>
+
 </databaseChangeLog>
