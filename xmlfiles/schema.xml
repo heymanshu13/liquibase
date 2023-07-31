@@ -58,4 +58,10 @@
         </addColumn>
     </changeSet>
 
+    <changeSet id="addNewColumn-6" author="Himanshu">
+        <addColumn tableName="employees">
+            <column name="Mobile No." type="VARCHAR(100)"/>
+        </addColumn>
+    </changeSet>
+
 </databaseChangeLog>
