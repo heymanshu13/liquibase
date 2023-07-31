@@ -62,5 +62,15 @@
         </sql>
     </changeSet>
 
+     <changeSet id="insertData-8" author="Him">
+        <insert tableName="employees">
+            <column name="name" value="Edwin"/>
+            <column name="age" valueNumeric="25"/>
+            <column name="job_title" value="DevOps Engineer Trainee"/>
+            <column name="location" value="Ranchi"/>
+            <column name="Email_ID" value="Ek13@gmail.com"/>
+        </insert>
+    </changeSet>
 
+    
 </databaseChangeLog>
