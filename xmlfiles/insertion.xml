@@ -95,4 +95,10 @@
         </sql>
     </changeSet>
 
+    <changeSet id="insertData-12" author="Himanshu">
+        <sql>
+            UPDATE employees SET Hometown = 'Mum' WHERE id = 3;
+        </sql>
+    </changeSet>
+
 </databaseChangeLog>
