@@ -1,0 +1,74 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+    <changeSet id="insertData" author="Him">
+        <insert tableName="employees">
+            <column name="name" value="John Doe"/>
+            <column name="age" valueNumeric="30"/>
+            <column name="job_title" value="Software Engineer"/>
+            <column name="location" value="Pune"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insertData-1" author="Him">
+        <insert tableName="employees">
+            <column name="name" value="Himanshu"/>
+            <column name="age" valueNumeric="22"/>
+            <column name="job_title" value="DevOps Engineer"/>
+            <column name="location" value="Pune"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insertData-2" author="Him">
+        <insert tableName="employees">
+            <column name="Email_ID" value="HK13@gmail.com"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insertData-3" author="Him">
+        <insert tableName="employees">
+            <column name="name" value="Himanshu"/>
+            <column name="age" valueNumeric="22"/>
+            <column name="job_title" value="DevOps Engineer"/>
+            <column name="location" value="Pune"/>
+            <column name="Email_ID" value="Hk13@gmail.com"/>
+        </insert>
+    </changeSet>
+
+
+    <changeSet id="insertData-4" author="Him">
+        <insert tableName="EMPLOYEES DATA">
+            <column name="name" value="Himanshu"/>
+            <column name="age" valueNumeric="22"/>
+            <column name="job_title" value="DevOps Engineer Trainee"/>
+            <column name="location" value="Pune"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insertData-5" author="Him">
+        <sql>
+            UPDATE employees SET City = 'Gwalior' WHERE id = 4;
+        </sql>
+    </changeSet>
+
+    <changeSet id="insertData-5" author="Himanshu">
+        <sql>
+            UPDATE employees SET Country = 'India' WHERE id = 4;
+        </sql>
+    </changeSet>
+
+    <changeSet id="insertData-6" author="Himanshu">
+        <sql>
+            UPDATE employees SET City = 'Pune' WHERE id = 2;
+        </sql>
+    </changeSet>
+
+    <changeSet id="insertData-7" author="Himanshu">
+        <sql>
+            UPDATE employees SET City = 'New York' WHERE id = 1;
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

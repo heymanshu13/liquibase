@@ -1,0 +1,49 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+    <changeSet id="createTable" author="Him">
+        <createTable tableName="employees">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="age" type="INT"/>
+            <column name="job_title" type="VARCHAR(100)"/>
+            <column name="location" type="VARCHAR(100)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="addNewColumn" author="Him">
+        <addColumn tableName="employees">
+            <column name="Email_ID" type="VARCHAR(100)"/>
+        </addColumn>
+    </changeSet>
+
+
+    <changeSet id="createTable-1" author="Him">
+        <createTable tableName="EMPLOYEES DATA">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="age" type="INT"/>
+            <column name="job_title" type="VARCHAR(100)"/>
+            <column name="location" type="VARCHAR(100)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="addNewColumn-2" author="Him">
+        <addColumn tableName="employees">
+            <column name="City" type="VARCHAR(100)"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="addNewColumn-3" author="Himanshu">
+        <addColumn tableName="employees">
+            <column name="Country" type="VARCHAR(100)"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>
