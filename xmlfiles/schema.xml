@@ -51,4 +51,8 @@
         </addColumn>
     </changeSet>
 
+    <changeSet id="remove_column_from_table" author="Him">
+        <dropColumn tableName="employees" columnName="Hometown" />
+    </changeSet>
+
 </databaseChangeLog>
