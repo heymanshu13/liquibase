@@ -82,5 +82,11 @@
             UPDATE employees SET Hobbies = 'Cricket' WHERE id = 4;
         </sql>
     </changeSet>
+  
+    <changeSet id="insertData-10" author="Himanshu">
+        <sql>
+            UPDATE employees SET Hobbies = 'Trekking' WHERE id = 2;
+        </sql>
+    </changeSet>
 
 </databaseChangeLog>
