@@ -52,4 +52,10 @@
         </addColumn>
     </changeSet>
 
+    <changeSet id="addNewColumn-5" author="Himanshu">
+        <addColumn tableName="employees">
+            <column name="Hometown" type="VARCHAR(100)"/>
+        </addColumn>
+    </changeSet>
+
 </databaseChangeLog>
