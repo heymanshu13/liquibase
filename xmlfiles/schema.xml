@@ -46,4 +46,10 @@
         </addColumn>
     </changeSet>
 
+    <changeSet id="addNewColumn-4" author="Himanshu">
+        <addColumn tableName="employees">
+            <column name="Hobbies" type="VARCHAR(100)"/>
+        </addColumn>
+    </changeSet>
+
 </databaseChangeLog>
