@@ -21,19 +21,6 @@
         </addColumn>
     </changeSet>
 
-
-    <changeSet id="createTable-1" author="Him">
-        <createTable tableName="EMPLOYEES DATA">
-            <column name="id" type="INT" autoIncrement="true">
-                <constraints primaryKey="true"/>
-            </column>
-            <column name="name" type="VARCHAR(50)"/>
-            <column name="age" type="INT"/>
-            <column name="job_title" type="VARCHAR(100)"/>
-            <column name="location" type="VARCHAR(100)"/>
-        </createTable>
-    </changeSet>
-
     <changeSet id="addNewColumn-2" author="Him">
         <addColumn tableName="employees">
             <column name="City" type="VARCHAR(100)"/>
