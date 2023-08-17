@@ -55,4 +55,10 @@
         <dropColumn tableName="employees" columnName="Hometown" />
     </changeSet>
 
+    <changeSet id="addNewColumn-7" author="Himanshu">
+        <addColumn tableName="employees">
+            <column name="Education" type="VARCHAR(100)"/>
+        </addColumn>
+    </changeSet>
+
 </databaseChangeLog>
